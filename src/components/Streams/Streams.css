@@ -1,0 +1,52 @@
+.streams{
+    margin: 50px auto 100px auto;
+}
+.streams-videos{
+    padding: 0 80px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.streams-more{
+    align-items: center;
+}
+.next-btn, .back-btn{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #181818;
+}
+.back-btn{
+    right: auto;
+    left: 20px;
+}
+.slider{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none; 
+}
+.stream{
+    position: relative;
+    flex-basis: 30%;
+}
+.stream-img{
+    width: 90%;
+}
+.play-icon{
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}

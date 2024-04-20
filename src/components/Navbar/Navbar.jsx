@@ -14,7 +14,8 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${sticky? 'dark-nav' : ''}`}>
-        <img src={logo} alt="" className='logo' />
+        <img src={logo} alt="" className='logo_pic' /> 
+        <span className='logo_text'>Chess Society</span>
         <ul>
             <li>Create</li>
             <li>Tournaments</li>
