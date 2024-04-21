@@ -7,7 +7,13 @@
     margin-bottom: 40px;
 }
 .streams-more{
-    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    height: 100vh;
+}
+.streams-more p{
+    margin-bottom: 20px;
 }
 .next-btn, .back-btn{
     position: absolute;

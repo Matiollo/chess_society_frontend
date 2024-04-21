@@ -10,5 +10,24 @@
 }
 .create-option p{
     margin: 20px auto 20px auto;
-    max-width: 350px;
+    max-width: 400px;
+    font-size: 16px;
+}
+.light-p{
+    color: #f5f5f5;
+}
+/* .rock-background{
+    background-image: url('../../assets/rock_2.png');
+    background-size: 600px;
+    background-position: center; 
+    padding: 30px;
+} */
+.rock-img {
+    position: absolute; /* Position the image absolutely */
+    top: 130%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 50%; /* Set the width to fill the container */
+    height: 50%; /* Set the height to fill the container */
+    z-index: -1; /* Place the image behind other content */
 }
