@@ -2,7 +2,6 @@
     margin: auto 50px 100px 50px;
     text-align: center;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 .create-option{
@@ -10,24 +9,43 @@
 }
 .create-option p{
     margin: 20px auto 20px auto;
-    max-width: 400px;
-    font-size: 16px;
+    max-width: 80%;
 }
-.light-p{
-    color: #f5f5f5;
+
+/* --------- media query --------- */
+
+@media (max-width: 700px){
+    .create{
+        flex-direction: column;
+        align-items: center;
+    }
+    .create-option{
+        width: 100%;
+    }
+    .create-option p{
+        display: none;
+    }
+    .left-option-btn{
+        margin: auto 130px 20px auto;
+    }
+    .right-option-btn{
+        margin-left: 130px;
+    }
 }
-/* .rock-background{
-    background-image: url('../../assets/rock_2.png');
-    background-size: 600px;
-    background-position: center; 
-    padding: 30px;
-} */
-.rock-img {
-    position: absolute; /* Position the image absolutely */
-    top: 130%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    width: 50%; /* Set the width to fill the container */
-    height: 50%; /* Set the height to fill the container */
-    z-index: -1; /* Place the image behind other content */
+@media (max-width: 550px){
+    .left-option-btn{
+        margin-right: 80px;
+    }
+    .right-option-btn{
+        margin-left: 80px;
+    }
 }
+@media (max-width: 450px){
+    .left-option-btn{
+        margin: auto 0px 10px auto;
+    }
+    .right-option-btn{
+        margin-left: 0px;
+    }
+}
+

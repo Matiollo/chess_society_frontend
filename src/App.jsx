@@ -4,6 +4,8 @@ import Hero from "./components/Hero/Hero";
 import Title from "./components/Title/Title";
 import Create from "./components/Create/Create";
 import Streams from "./components/Streams/Streams";
+import Footer from "./components/Footer/Footer";
+import Tournaments from "./components/Tournaments/Tournaments";
 
 const App = () => {
   return (
@@ -14,10 +16,11 @@ const App = () => {
         <Title title='Create' />
         <Create/>
         <Title title='Tournaments' /> 
-        {/* Torurnaments block */}
+        <Tournaments />
         <Title title='Watch' />
         <Streams />
       </div>
+      <Footer />
     </div>
   )
 }

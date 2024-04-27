@@ -6,8 +6,27 @@
     text-transform: none;
     margin: 70px 0 30px;
 }
-.title h2{
+.title h1{
     font-size: 45px;
     color: #303030;
     margin-top: 5px;
+}
+
+/* --------- media query --------- */
+
+@media (max-width: 550px){
+    .title{
+        margin-bottom: 25px;
+    }
+    .title h1{
+        font-size: 40px;
+    } 
+}
+@media (max-width: 350px){
+    .title{
+        margin-bottom: 20px;
+    }
+    .title h1{
+        font-size: 30px;
+    } 
 }
