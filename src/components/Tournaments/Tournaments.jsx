@@ -1,18 +1,19 @@
 import React from 'react'
-// import {
-//     Table,
-//     TableBody,
-//     TableCaption,
-//     TableCell,
-//     TableHead,
-//     TableHeader,
-//     TableRow,
-//   } from "@/components/ui/table"
+import {
+    Table,
+    TableBody,
+    TableCaption,
+    TableCell,
+    TableHead,
+    TableHeader,
+    TableRow,
+  } from "../../../components/ui/table.jsx"
+import './Tournaments.css'
 
 const Tournaments = () => {
   return (
     <div className='tournaments'>
-        {/* <Table>
+        <Table>
             <TableCaption>A list of your recent invoices.</TableCaption>
             <TableHeader>
                 <TableRow>
@@ -30,7 +31,7 @@ const Tournaments = () => {
                 <TableCell className="text-right">$250.00</TableCell>
                 </TableRow>
             </TableBody>
-        </Table> */}
+        </Table>
     </div>
   )
 }
