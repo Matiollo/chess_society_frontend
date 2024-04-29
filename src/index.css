@@ -1,5 +1,5 @@
 @tailwind base;
-@tailwind components;
+/* @tailwind components; */
 @tailwind utilities;
   
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
@@ -41,15 +41,30 @@ a{
   font-size: 25px;
   margin-bottom: 10px;
 }
+.btn.small-btn{
+  font-size: 14px;
+  padding: 10px 20px;
+}
 .description-text{
   font-size: 18px;
 }
 
 /* --------- media query --------- */
 
-@media (max-width: 1100px){
+@media (max-width: 1500px){
   .description-text{
     font-size: 16px;
+  }
+}
+@media (max-width: 1200px){
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 1100px){
+  .description-text{
+    font-size: 14px;
   }
 }
 @media (max-width: 900px){

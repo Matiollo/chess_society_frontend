@@ -1,5 +1,5 @@
 .create{
-    margin: auto 50px 100px 50px;
+    margin: auto 50px 120px 50px;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -13,7 +13,11 @@
 }
 
 /* --------- media query --------- */
-
+@media (max-width: 800px){
+    .create{
+        margin: auto 50px 50px 50px;
+    }
+}
 @media (max-width: 700px){
     .create{
         flex-direction: column;

@@ -16,7 +16,7 @@ const Streams = () => {
     const slider = useRef();
     const next_btn = useRef();
     const back_btn = useRef();
-    let tx = -28.5714;
+    let tx = window.innerWidth > 700 ? -28.5714 : -42.8571;
 
     const slideForward = () => {
         if(tx > -49.99){
@@ -51,19 +51,7 @@ const Streams = () => {
                     <ul ref={slider}>
                         <li>
                             <div className='stream'>
-                                <img src={stream_1} alt='' className='stream-img' />
-                                <img src={play_icon} alt='' className='play-icon' />
-                            </div>
-                        </li>
-                        <li>
-                            <div className='stream'>
-                                <img src={stream_2} alt='' className='stream-img' />
-                                <img src={play_icon} alt='' className='play-icon' />
-                            </div>
-                        </li>
-                        <li>
-                            <div className='stream'>
-                                <img src={stream_3} alt='' className='stream-img' />
+                                <img src={stream_6} alt='' className='stream-img' />
                                 <img src={play_icon} alt='' className='play-icon' />
                             </div>
                         </li>
@@ -75,13 +63,25 @@ const Streams = () => {
                         </li>
                         <li>
                             <div className='stream'>
-                                <img src={stream_5} alt='' className='stream-img' />
+                                <img src={stream_2} alt='' className='stream-img' />
                                 <img src={play_icon} alt='' className='play-icon' />
                             </div>
                         </li>
                         <li>
                             <div className='stream'>
-                                <img src={stream_6} alt='' className='stream-img' />
+                                <img src={stream_1} alt='' className='stream-img' />
+                                <img src={play_icon} alt='' className='play-icon' />
+                            </div>
+                        </li>
+                        <li>
+                            <div className='stream'>
+                                <img src={stream_3} alt='' className='stream-img' />
+                                <img src={play_icon} alt='' className='play-icon' />
+                            </div>
+                        </li>
+                        <li>
+                            <div className='stream'>
+                                <img src={stream_5} alt='' className='stream-img' />
                                 <img src={play_icon} alt='' className='play-icon' />
                             </div>
                         </li>

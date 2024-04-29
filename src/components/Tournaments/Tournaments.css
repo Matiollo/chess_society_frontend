@@ -1,0 +1,120 @@
+.tournaments{
+    margin: auto 35px 120px 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.tournaments-table{
+    margin-right: 40px;
+    width: 100%;
+}
+.tournaments-description{
+    margin-top: 10px;
+    width: 30%;
+    background-color: #c8c8c8;
+    padding: 20px 15px 25px 15px;
+    border-radius: 2%;
+    position: relative;
+}
+.tournaments-description h2{
+    margin: 12px auto 30px;
+    font-size: 16px;
+    color: #ffffff;
+}
+.tournaments-description p{
+    margin: 10px auto 20px;
+}
+.tournaments-description button{
+    font-size: 25px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 25px;
+    margin-top: 20px;
+}
+
+/* --------- media query --------- */
+
+@media (max-width: 1300px){
+    .tournaments-description{
+        width: 25%;
+    }
+    .tournaments-description h2{
+        font-size: 14px;
+    }
+    .tournaments-description button{
+        padding: 14px 25px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 1000px){
+    .tournaments{
+        flex-direction: column;
+    }
+    .tournaments-table{
+        margin-right: 0px;
+    }
+    .tournaments-description{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+    }
+    .tournaments-description p{
+        display: none;
+    }
+    .tournaments-description h2{
+        /* color: black;
+        font-weight: 600;
+        font-size: ; */
+        display: none;
+    }
+    .tournaments-description button{
+        position: relative;
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 900px){
+    .tournaments-description button{
+        font-size: 20px;
+    }
+    .type-cell{
+        display: none;
+    }
+    .duration-cell{
+        display: none;
+    }
+}
+@media (max-width: 800px){
+    .tournaments-description{  
+        padding: 10px 0px 0px 0px;
+    }
+    .tournaments-description button{
+        font-size: 18px;
+    }
+    .tournaments{
+        margin: auto 15px 0px 15px;
+    }
+}
+@media (max-width: 700px){
+    .players-cell{
+        display: none;
+    }
+}
+@media (max-width: 600px){
+    .smaller-text{
+        font-size: 12px;
+    }
+}
+@media (max-width: 550px){
+    .tournaments-description button{
+        font-size: 16px;
+    }
+    .start-cell{
+        display: none;
+    }
+}
+@media (max-width: 370px){
+    .tournaments{
+        margin: auto 5px auto 5px;
+    }
+}
