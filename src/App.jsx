@@ -17,8 +17,8 @@ const App = () => {
         <Create/>
         <Title title='Tournaments' /> 
         <Tournaments />
-        <Title title='Watch' />
-        <Streams />
+        {/* <Title title='Watch' />
+        <Streams /> */}
       </div>
       <Footer />
     </div>

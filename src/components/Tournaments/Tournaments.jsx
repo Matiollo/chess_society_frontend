@@ -30,48 +30,48 @@ const Tournaments = () => {
                 <TableBody>
                     <TableRow>
                         <TableCell className='title-cell smaller-text'>Exciting tournament</TableCell>
-                        <TableCell className='organizer-cell smaller-text'>incelbit01</TableCell>
-                        <TableCell className='type-cell'>Regular</TableCell>
-                        <TableCell className='start-cell smaller-text'>21/03 14:00</TableCell>
+                        <TableCell className='organizer-cell smaller-text'>kudos</TableCell>
+                        <TableCell className='type-cell'>Swiss</TableCell>
+                        <TableCell className='start-cell smaller-text'>21/03 15:00</TableCell>
                         <TableCell className='duration-cell'>2d</TableCell>
-                        <TableCell className='players-cell'>0 / 10</TableCell>
-                        <TableCell className="text-center"><button className='btn small-btn'>See more</button></TableCell>
+                        <TableCell className='players-cell'>9 / 10</TableCell>
+                        <TableCell className="text-center"><button className='btn small-btn dark-btn'>See more</button></TableCell>
                     </TableRow>
                     <TableRow>
-                        <TableCell className='title-cell smaller-text'>Exciting tournament</TableCell>
-                        <TableCell className='organizer-cell smaller-text'>incelbit01</TableCell>
+                        <TableCell className='title-cell smaller-text'>Battle puff</TableCell>
+                        <TableCell className='organizer-cell smaller-text'>frankyyyy</TableCell>
                         <TableCell className='type-cell'>Regular</TableCell>
-                        <TableCell className='start-cell smaller-text'>21/03 14:00</TableCell>
-                        <TableCell className='duration-cell'>2d</TableCell>
-                        <TableCell className='players-cell'>0 / 10</TableCell>
-                        <TableCell className="text-center"><button className='btn small-btn'>See more</button></TableCell>
+                        <TableCell className='start-cell smaller-text'>21/03 16:00</TableCell>
+                        <TableCell className='duration-cell'>5d</TableCell>
+                        <TableCell className='players-cell'>1 / 12</TableCell>
+                        <TableCell className="text-center"><button className='btn small-btn dark-btn'>See more</button></TableCell>
                     </TableRow>
                     <TableRow>
-                        <TableCell className='title-cell smaller-text'>Exciting tournament</TableCell>
+                        <TableCell className='title-cell smaller-text'>Friends only</TableCell>
                         <TableCell className='organizer-cell smaller-text'>incelbit01</TableCell>
                         <TableCell className='type-cell'>Regular</TableCell>
-                        <TableCell className='start-cell smaller-text'>21/03 14:00</TableCell>
+                        <TableCell className='start-cell smaller-text'>21/03 16:00</TableCell>
                         <TableCell className='duration-cell'>2d</TableCell>
-                        <TableCell className='players-cell'>0 / 10</TableCell>
-                        <TableCell className="text-center"><button className='btn small-btn'>See more</button></TableCell>
+                        <TableCell className='players-cell'>5 / 10</TableCell>
+                        <TableCell className="text-center"><button className='btn small-btn dark-btn'>See more</button></TableCell>
                     </TableRow>
                     <TableRow>
-                        <TableCell className='title-cell smaller-text'>Exciting tournament</TableCell>
-                        <TableCell className='organizer-cell smaller-text'>incelbit01</TableCell>
-                        <TableCell className='type-cell'>Regular</TableCell>
-                        <TableCell className='start-cell smaller-text'>21/03 14:00</TableCell>
-                        <TableCell className='duration-cell'>2d</TableCell>
-                        <TableCell className='players-cell'>0 / 10</TableCell>
-                        <TableCell className="text-center"><button className='btn small-btn'>See more</button></TableCell>
+                        <TableCell className='title-cell smaller-text'>Join?</TableCell>
+                        <TableCell className='organizer-cell smaller-text'>deadly_v</TableCell>
+                        <TableCell className='type-cell'>Swiss</TableCell>
+                        <TableCell className='start-cell smaller-text'>21/03 18:00</TableCell>
+                        <TableCell className='duration-cell'>1d</TableCell>
+                        <TableCell className='players-cell'>0 / 20</TableCell>
+                        <TableCell className="text-center"><button className='btn small-btn dark-btn'>See more</button></TableCell>
                     </TableRow>
                     <TableRow>
-                        <TableCell className='title-cell smaller-text'>Exciting tournament</TableCell>
+                        <TableCell className='title-cell smaller-text'>Super tournament</TableCell>
                         <TableCell className='organizer-cell smaller-text'>incelbit01</TableCell>
                         <TableCell className='type-cell'>Regular</TableCell>
-                        <TableCell className='start-cell smaller-text'>21/03 14:00</TableCell>
-                        <TableCell className='duration-cell'>2d</TableCell>
-                        <TableCell className='players-cell'>0 / 10</TableCell>
-                        <TableCell className="text-center"><button className='btn small-btn'>See more</button></TableCell>
+                        <TableCell className='start-cell smaller-text'>21/03 18:30</TableCell>
+                        <TableCell className='duration-cell'>2h</TableCell>
+                        <TableCell className='players-cell'>2 / 16</TableCell>
+                        <TableCell className="text-center"><button className='btn small-btn dark-btn'>See more</button></TableCell>
                     </TableRow>
                 </TableBody>
             </Table>
@@ -79,7 +79,7 @@ const Tournaments = () => {
         <div className='tournaments-description'>
             <h2 className='description-text'>UPCOMING CHESS TOURNAMENTS</h2>
             <p className='description-text'>Explore upcoming events and register to showcase your skills against players from around the world!</p>
-            <button className='btn dark-btn '>See more</button>
+            <button className='btn'>See more</button>
         </div>
     </div>
   )

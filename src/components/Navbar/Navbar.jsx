@@ -26,7 +26,7 @@ const Navbar = () => {
         <ul className={mobileMenu? '' : 'hide-mobile-menu'}>
             <li>Create</li>
             <li>Tournaments</li>
-            <li>Watch</li>
+            {/* <li>Watch</li> */}
             <li><button className='btn'>Sign in</button></li>
         </ul>
         <img src={menu_icon} alt='' className='menu-icon' onClick={toggleMenu} />
