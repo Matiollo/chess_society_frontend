@@ -9,6 +9,7 @@ import {
 import Home from "./pages/Home/Home";
 import Create from "./pages/Create/Create";
 import Login from "./pages/Login/Login";
+import Registration from "./pages/Registation/Registation"
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route path="/create" element={<Create />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
       </Routes>
     </Router>
   );
