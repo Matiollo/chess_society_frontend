@@ -7,7 +7,7 @@ import {
     TableHead,
     TableHeader,
     TableRow,
-  } from "../../../components/ui/table.jsx"
+} from "../../../components/ui/table.jsx"
 import './Tournaments.css'
 
 const Tournaments = () => {
@@ -39,7 +39,7 @@ const Tournaments = () => {
                     </TableRow>
                     <TableRow>
                         <TableCell className='title-cell smaller-text'>Battle puff</TableCell>
-                        <TableCell className='organizer-cell smaller-text'>frankyyyy</TableCell>
+                        <TableCell className='organizer-cell smaller-text'>frankyyy</TableCell>
                         <TableCell className='type-cell'>Regular</TableCell>
                         <TableCell className='start-cell smaller-text'>21/03 16:00</TableCell>
                         <TableCell className='duration-cell'>5d</TableCell>

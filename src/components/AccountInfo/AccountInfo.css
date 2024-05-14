@@ -1,0 +1,107 @@
+.account-info {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/back_8.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.buffer {
+    min-height: 15vh;
+}
+.account-info-wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.account-info-wrapper-left {
+    min-height: 60vh;
+    width: 35%;
+    margin-right: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 30px 40px;
+    color: #181818;
+}
+.account-info-wrapper-right {
+    min-height: 60vh;
+    width: 35%;
+    margin-left: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 30px 40px;
+    color: #181818;
+}
+.account-header {
+    position: relative;
+    width: 100%;
+}
+.account-header h1 {
+    margin-left: 13px;
+    font-size: 50px;
+}
+.edit-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-85%);
+    font-size: 28px;
+}
+.account-section {
+    margin: 15px auto 35px auto;
+}
+.account-section h2 {
+    font-size: 21px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: black;
+}
+
+/* --------- media query --------- */
+
+@media (max-width: 1500px){
+    .account-info-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .account-info-wrapper-left {
+        width: 50%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .account-info-wrapper-right {
+        width: 50%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 1000px){
+    .account-info-wrapper-left {
+        width: 70%;
+    }
+    .account-info-wrapper-right {
+        width: 70%;
+    }
+}
+@media (max-width: 700px){
+    .buffer {
+        min-height: 10vh;
+    }
+    .account-info-wrapper-left {
+        width: 80%;
+    }
+    .account-info-wrapper-right {
+        width: 80%;
+    }
+}
+@media (max-width: 600px){
+    .account-info-wrapper-left {
+        width: 95%;
+    }
+    .account-info-wrapper-right {
+        width: 95%;
+    }
+}
