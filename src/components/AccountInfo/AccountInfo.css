@@ -41,6 +41,7 @@
 .account-header h1 {
     margin-left: 13px;
     font-size: 50px;
+    font-weight: 600;
 }
 .edit-icon {
     position: absolute;
@@ -57,6 +58,7 @@
     margin-left: 15px;
     margin-bottom: 20px;
     text-decoration: underline;
+    /* font-weight: 600; */
     color: black;
 }
 

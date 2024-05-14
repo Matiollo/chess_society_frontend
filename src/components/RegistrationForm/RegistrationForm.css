@@ -1,4 +1,4 @@
-.login-form {
+.registration-form {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/back_8.jpg');
@@ -36,7 +36,7 @@
     font-size: 16px;
     padding: 20px 45px 20px 20px;
 }
-.login-icon {
+.registration-icon {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -47,15 +47,15 @@
     margin-top: 30px;
     width: 100%;
 }
-.register-link {
+.login-link {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
 }
-.register-link p a {
+.login-link p a {
     text-decoration: none;
     font-weight: 700;
 }
-.register-link p a:hover {
+.login-link p a:hover {
     text-decoration: underline;
 }
