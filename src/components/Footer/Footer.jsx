@@ -1,9 +1,9 @@
 import React from 'react'
 import './Footer.css'
 
-const Footer = () => {
+const Footer = ({additional_style}='') => {
   return (
-    <div className='footer'>
+    <div className={`footer ${additional_style}`}>
         <p>© 2024 Chess Society</p>
         <a href="">Help</a>
     </div> 

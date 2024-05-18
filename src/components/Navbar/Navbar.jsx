@@ -9,7 +9,7 @@ const Navbar = () => {
 
     useEffect(()=>{
         window.addEventListener('scroll', ()=>{
-            window.scrollY > 80 ? setSticky(true) : setSticky(false);
+            window.scrollY > 70 ? setSticky(true) : setSticky(false);
         })
     }, [])
 
@@ -27,7 +27,8 @@ const Navbar = () => {
             <li>Create</li>
             <li>Tournaments</li>
             {/* <li>Watch</li> */}
-            <li><button className='btn'>Sign in</button></li>
+            <li><button className='btn'>kudos</button></li> 
+            {/* Sign in */}
         </ul>
         <img src={menu_icon} alt='' className='menu-icon' onClick={toggleMenu} />
     </nav>
