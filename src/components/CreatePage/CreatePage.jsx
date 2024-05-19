@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './CreatePage.css'
 import * as Tabs from '@radix-ui/react-tabs';
 import * as Select from '@radix-ui/react-select';
-import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from '@radix-ui/react-icons';
+import { CheckIcon, ChevronDownIcon, ChevronUpIcon, InfoCircledIcon } from '@radix-ui/react-icons';
 import * as Toggle from '@radix-ui/react-toggle';
 
 const CreatePage = ({default_tab}) => {
@@ -40,7 +40,13 @@ const CreatePage = ({default_tab}) => {
                                 </Select.Root>
                             </div>
                             <div className='create-form-item create-form-one-third'>
-                                <h1>COLOR</h1>
+                                <div className='create-form-header-holder'>
+                                    <h1>COLOR</h1>
+                                    <div className='create-form-tooltip'>
+                                        <InfoCircledIcon />
+                                        <span className='create-form-tooltip-text'>Choose your chess piece color</span>
+                                    </div>
+                                </div>
                                 <Select.Root defaultValue="Random">
                                     <Select.Trigger className="SelectTrigger" aria-label="Food">
                                         <Select.Value />
@@ -70,7 +76,13 @@ const CreatePage = ({default_tab}) => {
                         </div>
                         <div className='create-form-section'>
                             <div className='create-form-item'>
-                                <h1>TIME PER PLAYER</h1>
+                                <div className='create-form-header-holder'>
+                                    <h1>TIME PER PLAYER</h1>
+                                    <div className='create-form-tooltip'>
+                                        <InfoCircledIcon />
+                                        <span className='create-form-tooltip-text'>Leave fields empty for unlimited time</span>
+                                    </div>
+                                </div>
                                 <div className='create-form-time'>
                                     <input type='number' min='0' placeholder="Days" />
                                     <input type='number' min='0' placeholder="Hours" />
@@ -81,7 +93,13 @@ const CreatePage = ({default_tab}) => {
                         </div>
                         <div className='create-form-section'>
                             <div className='create-form-item'>
-                                <h1>TIME PER MOVE</h1>
+                            <div className='create-form-header-holder'>
+                                    <h1>TIME PER MOVE</h1>
+                                    <div className='create-form-tooltip'>
+                                        <InfoCircledIcon />
+                                        <span className='create-form-tooltip-text'>Leave fields empty for unlimited time</span>
+                                    </div>
+                                </div>
                                 <div className='create-form-time'>
                                     <input type='number' min='0' placeholder="Days" />
                                     <input type='number' min='0' placeholder="Hours" />
@@ -92,7 +110,14 @@ const CreatePage = ({default_tab}) => {
                         </div>
                         <div className='create-form-section'>
                             <div className='create-form-item create-form-half'>
-                                <h1>OPPONENT</h1>
+                                <div className='create-form-header-holder'>
+                                    <h1>OPPONENT</h1>
+                                    <div className='create-form-tooltip'>
+                                        <InfoCircledIcon />
+                                        <span className='create-form-tooltip-text'>It is also possible to invite an opponent with 
+                                        a link you will get after creating the game</span>
+                                    </div>
+                                </div>
                                 <div className='create-form-opponent'>
                                     <input type='text' placeholder="Username" />
                                 </div>

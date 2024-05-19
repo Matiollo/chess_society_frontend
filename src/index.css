@@ -34,9 +34,15 @@ a{
   border: 0;
   outline: 0;
 }
+.btn:hover {
+  background: #dedede;
+}
 .btn.dark-btn{
   background: #181818;
   color: #fff;
+}
+.btn.dark-btn:hover {
+  background: #363636;
 }
 .btn.big-btn{
   font-size: 25px;
