@@ -105,17 +105,12 @@
     padding: 7px 7px;
     border-radius: 10px;
     font-size: 14.5px;
-   
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
 }
 .create-form-tooltip:hover .create-form-tooltip-text {
     visibility: visible;
 }
-
-
-
 
 
 /* ----- Select style ----- */
@@ -242,7 +237,7 @@
     height: 55px;
     background-color: white;
     color: var(--violet-11);
-    width: 23%;
+    width: 22%;
     border: 2px solid transparent;
 }
 .create-form-time input:hover {
@@ -251,14 +246,75 @@
 }
 
 
+.create-form-range {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.create-form-range input {
+    outline: none; 
+    /* margin-right: 16px; */
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 20px 30px 20px 30px;
+    line-height: 1;
+    height: 55px;
+    background-color: white;
+    color: var(--violet-11);
+    width: 46%;
+    border: 2px solid transparent;
+}
+.create-form-range input:hover {
+    background-color: #dedede;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+.create-form-break {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.create-form-break input {
+    outline: none; 
+    /* margin-right: 16px; */
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 20px 30px 20px 30px;
+    line-height: 1;
+    height: 55px;
+    background-color: white;
+    color: var(--violet-11);
+    width: 46%;
+    border: 2px solid transparent;
+}
+.create-form-break input:hover {
+    background-color: #dedede;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.create-form-separator {
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 70px;
+    text-decoration:wavy;
+    color: #181818;
+    font-weight: 200;
+}
+
+
 .create-form-half {
     width: 48%;
 }
-.create-form-opponent {
+.create-form-fourth {
+    width: 22%;
+}
+.create-form-input {
     position: relative;
     width: 100%;
 }
-.create-form-opponent input {
+.create-form-input input {
     outline: none; 
     width: 100%;
     /* margin-right: 16px; */
@@ -271,7 +327,52 @@
     color: var(--violet-11);
     border: 2px solid transparent;
 }
-.create-form-opponent input:hover {
+.create-form-input input:hover {
+    background-color: #dedede;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.create-form-text-area {
+    position: relative;
+    width: 100%;
+}
+.create-form-text-area textarea {
+    outline: none; 
+    width: 100%;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 20px 30px 20px 30px;
+    line-height: 1;
+    height: 150px;
+    background-color: white;
+    color: var(--violet-11);
+    border: 2px solid transparent;
+}
+.create-form-text-area textarea:hover {
+    background-color: #dedede;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.create-form-date-time-input{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.create-form-date-time-input input {
+    outline: none; 
+    width: 46%;
+    /* margin-right: 16px; */
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 20px 30px 20px 30px;
+    line-height: 1;
+    height: 55px;
+    background-color: white;
+    color: var(--violet-11);
+    border: 2px solid transparent;
+}
+.create-form-date-time-input input:hover {
     background-color: #dedede;
     border: 2px solid rgba(0, 0, 0, 0.3);
 }

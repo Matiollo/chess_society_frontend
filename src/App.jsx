@@ -10,6 +10,7 @@ import Registration from "./pages/Registation/Registation";
 import Account from "./pages/Account/Account";
 import AccountEdit from "./pages/Account/AccountEdit";
 import Create from "./pages/Create/Create";
+import Tournaments from "./pages/Tournaments/Tournaments";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/account" element={<Account />} />
         <Route path="/account-edit" element={<AccountEdit />} />
         <Route path="/create" element={<Create />} />
+        <Route path="/tournaments" element={<Tournaments />} />
       </Routes>
     </Router>
   );
