@@ -48,7 +48,7 @@ const CreatePage = ({default_tab}) => {
                                     </div>
                                 </div>
                                 <Select.Root defaultValue="Random">
-                                    <Select.Trigger className="SelectTrigger" aria-label="Food">
+                                    <Select.Trigger className="SelectTrigger" aria-label="Type">
                                         <Select.Value />
                                         <Select.Icon className="SelectIcon">
                                             <ChevronDownIcon />
@@ -175,7 +175,7 @@ const CreatePage = ({default_tab}) => {
                             <div className='create-form-item create-form-half'>
                                 <h1>TYPE</h1>
                                 <Select.Root defaultValue="Standard">
-                                    <Select.Trigger className="SelectTrigger" aria-label="Food">
+                                    <Select.Trigger className="SelectTrigger" aria-label="Type">
                                         <Select.Value />
                                         <Select.Icon className="SelectIcon">
                                             <ChevronDownIcon />

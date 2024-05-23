@@ -18,7 +18,7 @@ const DarkNavbar = () => {
                 <li>Create</li>
                 <li>Tournaments</li>
                 {/* <li>Watch</li> */}
-                <li><button className='btn'>Sign in</button></li>
+                <li><button className='btn'>kudos</button></li>  {/* Sign in */}
             </ul>
             <img src={menu_icon} alt='' className='menu-icon' onClick={toggleMenu} />
         </nav>

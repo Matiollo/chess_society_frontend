@@ -1,11 +1,123 @@
 .tournaments-page {
-    /* display: flex; */
-    /* justify-content: center; */
-    margin-top: 120px;
+    margin-top: 130px;
 }
 .tournaments-page-content {
     margin: 50px auto 120px auto;
+    display: flex;
 }
 .tournaments-page-table{
-    margin-top: 100px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: auto;
 }
+.tournaments-page-filter-area {
+    margin-left: 35px;
+    padding: 10px 15px 15px 15px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .2) 0 6px 20px;
+    width: 25%;
+    height: 100%;
+    border-radius: 10px;
+}
+.tournaments-page-input {
+    position: relative;
+    width: 100%;
+}
+.tournaments-page-input input {
+    outline: none; 
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 20px 30px 20px 30px;
+    line-height: 1;
+    height: 48px;
+    background-color: white;
+    color: var(--violet-11);
+    border: 1px solid transparent;
+}
+.tournaments-page-input input:hover {
+    background-color: #dedede;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.tournaments-page-select {
+    margin-bottom: 25px;
+}
+.SelectTrigger {
+    height: 48px;
+    width: 100%;
+    font-weight: 400;
+}
+.SelectTrigger.selected {
+    color: #181818; 
+}
+.SelectTrigger.placeholder {
+    color: rgba(0, 0, 0, 0.45); 
+}
+
+.tournaments-page-column-toggle {
+    margin-top: 20px;
+}
+.toggle-btn {
+    background-color: #dedede;
+    color: #181818;
+    width: 100%;
+    border-radius: 30px;
+    height:48px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+.column-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 12px;
+}
+.column-list div {
+    width: 50%;
+    margin-bottom: 5px;
+}
+.column-list label {
+    display: block;
+    cursor: pointer;
+    color: #181818;
+}
+.column-list input {
+    margin-right: 5px;
+}
+.column-list input[type="checkbox"] {
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    width: 12px;
+    height: 12px;
+    border: 2px solid #dedede; 
+    border-radius: 3px; 
+    background-color: transparent; 
+    cursor: pointer;
+    vertical-align: middle;
+}
+.column-list input[type="checkbox"]:checked {
+    background-color: #dedede; 
+}
+
+.tournaments-page-input h1 {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.tournaments-page-range {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 10px;
+}
+.tournaments-page-range input {
+    width: 48%;
+}
+
+
+
