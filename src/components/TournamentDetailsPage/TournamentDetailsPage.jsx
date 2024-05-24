@@ -1,6 +1,5 @@
 import React from 'react'
 import "./TournamentDetailsPage.css"
-import { InfoCircledIcon } from '@radix-ui/react-icons';
 import moment from 'moment';
 import { Bracket, Seed, SeedItem, SeedTeam } from 'react-brackets';
 
@@ -196,8 +195,8 @@ const TournamentDetailsPage = () => {
                 </div>
             </div>
             <div className='tournament-details-page-section-four'>
-                <button className='btn tournament-details-page-button' type='submit'>Copy Invite Link</button>                
-                <button className='btn dark-btn tournament-details-page-button' type='submit'>Edit</button>
+                <button className='btn tournament-details-page-button'>Copy Invite Link</button>                
+                <button className='btn dark-btn tournament-details-page-button'>Edit</button>
             </div>
         </div>
     </div>

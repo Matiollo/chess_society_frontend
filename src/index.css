@@ -44,6 +44,12 @@ a{
 .btn.dark-btn:hover {
   background: #363636;
 }
+.btn.grey-btn{
+  background: #dedede;
+}
+.btn.grey-btn:hover{
+  background: #c7c7c7;
+}
 .btn.big-btn{
   font-size: 25px;
   margin-bottom: 10px;

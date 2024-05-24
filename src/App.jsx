@@ -11,7 +11,8 @@ import Account from "./pages/Account/Account";
 import AccountEdit from "./pages/Account/AccountEdit";
 import Create from "./pages/Create/Create";
 import Tournaments from "./pages/Tournaments/Tournaments";
-import TournamentsDetails from "./pages/Tournaments/TournamentDetails";
+import TournamentDetails from "./pages/Tournaments/TournamentDetails";
+import TournamentEdit from "./pages/Tournaments/TournamentEdit";
 
 const App = () => {
   return (
@@ -26,7 +27,8 @@ const App = () => {
         <Route path="/tournaments" element={<Tournaments />} />
 
         {/* IDs! */}
-        <Route path="/tournament/1" element={<TournamentsDetails />} />
+        <Route path="/tournament/1" element={<TournamentDetails />} />
+        <Route path="/tournament/edit/1" element={<TournamentEdit />} />
         
       </Routes>
     </Router>
