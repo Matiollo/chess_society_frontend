@@ -11,6 +11,7 @@ import Account from "./pages/Account/Account";
 import AccountEdit from "./pages/Account/AccountEdit";
 import Create from "./pages/Create/Create";
 import Tournaments from "./pages/Tournaments/Tournaments";
+import TournamentsDetails from "./pages/Tournaments/TournamentDetails";
 
 const App = () => {
   return (
@@ -23,6 +24,10 @@ const App = () => {
         <Route path="/account-edit" element={<AccountEdit />} />
         <Route path="/create" element={<Create />} />
         <Route path="/tournaments" element={<Tournaments />} />
+
+        {/* IDs! */}
+        <Route path="/tournament/1" element={<TournamentsDetails />} />
+        
       </Routes>
     </Router>
   );

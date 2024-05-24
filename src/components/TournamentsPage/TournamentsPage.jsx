@@ -3,9 +3,15 @@ import Title from '../Title/Title'
 import './TournamentsPage.css'
 import DataTable from 'react-data-table-component'
 import * as Select from '@radix-ui/react-select';
-import { CheckIcon, ChevronDownIcon, InfoCircledIcon } from '@radix-ui/react-icons';
+import { CheckIcon, ChevronDownIcon } from '@radix-ui/react-icons';
+import moment from 'moment';
 
-
+const formatDateTime = (datetime) => {
+    const date = moment(datetime);
+    const formattedDate = date.format('LL'); // e.g., June 24, 2024
+    const formattedTime = date.format('LT'); // e.g., 3:30 PM
+    return `${formattedDate} ${formattedTime}`;
+};
 
 const columns = [
     {
@@ -29,7 +35,7 @@ const columns = [
     {
         id: 'start',
         name: 'Start',
-        selector: row => row.start,
+        selector: row => formatDateTime(row.start),
         sortable: true
     },
     {
@@ -63,6 +69,12 @@ const columns = [
         sortable: true 
     },
     {
+        id: 'rated',
+        name: 'Rated',
+        selector: row => row.rated ? 'Yes' : 'No',
+        sortable: true 
+    },
+    {
         id: 'participants',
         name: 'Participants',
         selector: row => row.participants,
@@ -81,7 +93,7 @@ const data = [
         title: "Exciting tournament",
         organizer_username: "kudos",
         type: "Standard",
-        start: "21/06/2024",
+        start: "2024-06-24T15:30:00Z",
         time_per_player: 10,
         time_per_move: "Unlimited",
         break_time: 10,
@@ -89,14 +101,15 @@ const data = [
         max_rating: 1600,
         min_players: 5,
         max_players: 50,
-        participants: 6
+        participants: 6,
+        rated: true
     },
     {
         id: 1, 
         title: "Filleee",
         organizer_username: "frankyyy",
         type: "Standard",
-        start: "21/06/2024",
+        start: "2024-06-24T15:30:00Z",
         time_per_player: "Unlimited",
         time_per_move: 1,
         break_time: 30,
@@ -104,14 +117,15 @@ const data = [
         max_rating: 2000,
         min_players: 16,
         max_players: 16,
-        participants: 0
+        participants: 0,
+        rated: true
     },
     {
         id: 1, 
         title: "homies only",
         organizer_username: "andre",
         type: "Marseillais",
-        start: "01/06/2024",
+        start: "2024-06-24T15:30:00Z",
         time_per_player: 10,
         time_per_move: "Unlimited",
         break_time: 10,
@@ -119,14 +133,15 @@ const data = [
         max_rating: 1600,
         min_players: 10,
         max_players: 50,
-        participants: 11
+        participants: 11,
+        rated: false
     },
     {
         id: 1, 
         title: "Different one",
         organizer_username: "kudos",
         type: "Standard",
-        start: "20/06/2024",
+        start: "2024-06-24T15:30:00Z",
         time_per_player: 10,
         time_per_move: "Unlimited",
         break_time: 15,
@@ -134,14 +149,15 @@ const data = [
         max_rating: 1600,
         min_players: 8,
         max_players: 20,
-        participants: 0
+        participants: 0,
+        rated: true
     },
     {
         id: 1, 
         title: "May celebration",
         organizer_username: "an00x",
         type: "Fisher Random",
-        start: "11/06/2024",
+        start: "2024-06-30T15:30:00Z",
         time_per_player: "15 min",
         time_per_move: "-",
         break_time: "1 min",
@@ -149,14 +165,15 @@ const data = [
         max_rating: 1600,
         min_players: 4,
         max_players: 32,
-        participants: 6
+        participants: 6,
+        rated: true
     },
     {
         id: 1, 
         title: "Exciting tournament",
         organizer_username: "kudos",
         type: "Standard",
-        start: "21/06/2024",
+        start: "2024-06-30T15:30:00Z",
         time_per_player: "10 min",
         time_per_move: "-",
         break_time: "10 min",
@@ -164,14 +181,15 @@ const data = [
         max_rating: 1600,
         min_players: 5,
         max_players: 50,
-        participants: 7
+        participants: 7,
+        rated: false
     },
     {
         id: 1, 
-        title: "Filleee",
+        title: "Demonzzz",
         organizer_username: "frankyyy",
         type: "Standard",
-        start: "21/06/2024",
+        start: "2024-06-30T15:30:00Z",
         time_per_player: "-",
         time_per_move: "1 min",
         break_time: "30 min",
@@ -179,14 +197,15 @@ const data = [
         max_rating: 2000,
         min_players: 16,
         max_players: 16,
-        participants: 6
+        participants: 6,
+        rated: true
     },
     {
         id: 1, 
-        title: "Filleee",
+        title: "Filleee 2.0",
         organizer_username: "frankyyy",
         type: "Standard",
-        start: "21/06/2024",
+        start: "2024-06-30T15:30:00Z",
         time_per_player: "-",
         time_per_move: "1 min",
         break_time: "30 min",
@@ -194,14 +213,15 @@ const data = [
         max_rating: 2000,
         min_players: 16,
         max_players: 36,
-        participants: 23
+        participants: 23,
+        rated: true
     },
     {
         id: 1, 
-        title: "homies only",
+        title: "foes_only",
         organizer_username: "kudos",
         type: "Marseillais",
-        start: "01/06/2024",
+        start: "2024-06-30T15:30:00Z",
         time_per_player: "10 min",
         time_per_move: "-",
         break_time: "10 min",
@@ -209,14 +229,15 @@ const data = [
         max_rating: 1600,
         min_players: 10,
         max_players: 50,
-        participants: 6
+        participants: 6,
+        rated: true
     },
     {
         id: 1, 
         title: "Exciting tournament",
         organizer_username: "kudos",
         type: "Fisher Random",
-        start: "21/06/2024",
+        start: "2024-06-30T15:30:00Z",
         time_per_player: "10 min",
         time_per_move: "-",
         break_time: "10 min",
@@ -224,14 +245,15 @@ const data = [
         max_rating: 1600,
         min_players: 4,
         max_players: 32,
-        participants: 6
+        participants: 6,
+        rated: false
     },
     {
         id: 1, 
         title: "Exciting tournament",
         organizer_username: "kudos",
         type: "Standard",
-        start: "21/06/2024",
+        start: "2024-06-30T15:30:00Z",
         time_per_player: "10 min",
         time_per_move: "-",
         break_time: "10 min",
@@ -239,7 +261,8 @@ const data = [
         max_rating: 1600,
         min_players: 4,
         max_players: 32,
-        participants: 10
+        participants: 10,
+        rated: true
     }
 ];
 
@@ -293,7 +316,8 @@ const TournamentsPage = () => {
         // min_rating: '',
         // max_rating: '',
         min_players: '',
-        max_players: ''
+        max_players: '',
+        rated: ''
     });
     
     const handleSearchChange = (field, value) => {
@@ -358,6 +382,11 @@ const TournamentsPage = () => {
     const visibleColumnsArray = columns.filter(column => visibleColumns[column.id]);
 
     const [toggleColumns, setToggleColumns] = useState(false);
+
+    
+
+    // const { datetime } = data.start;
+    // const formattedDateTime = formatDateTime(datetime);
 
       
 
