@@ -26,9 +26,8 @@ const App = () => {
         <Route path="/create" element={<Create />} />
         <Route path="/tournaments" element={<Tournaments />} />
 
-        {/* IDs! */}
-        <Route path="/tournament/1" element={<TournamentDetails />} />
-        <Route path="/tournament/edit/1" element={<TournamentEdit />} />
+        <Route path="/tournament/:id" element={<TournamentDetails />} />
+        <Route path="/tournament/edit/:id" element={<TournamentEdit />} />
         
       </Routes>
     </Router>
